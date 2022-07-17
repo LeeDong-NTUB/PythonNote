@@ -1,12 +1,12 @@
 
 #正三角形
 n=int(input())
-o=''
-t=n-1
+output=''
+p=n-1
 for i in range(1,(n*2),2):
-    tmp=''+'_'*t
+    text=''+'_'*p
     for k in range(i):
-        tmp+='*'
-    o+=tmp+'_'*t+'\n'
-    t-=1
-print(o)
+        text+='*'
+    output+=text+'_'*p+'\n'
+    p-=1
+print(output)
