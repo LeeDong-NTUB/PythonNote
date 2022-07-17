@@ -1,5 +1,5 @@
 
-
+#羅馬符號轉數字
 def romantoint(T):
     sc={'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
     s=0
@@ -8,7 +8,7 @@ def romantoint(T):
         if i!=0 and sc[T[i-1]] < sc[T[i]]:
             s=s-(sc[T[i-1]]*2)        
     return s
-
+#數字轉羅馬符號
 def inttoroman(s):
     num_table = [
     [1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],
